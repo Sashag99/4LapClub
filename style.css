@@ -1,6 +1,8 @@
 /****************GENERAL****************/
 html{
-
+	font-family: 'Lora', serif;
+	padding: 0;
+	margin: 0;
 }
 body{
 	background-color: #f2f2f2;
@@ -8,6 +10,8 @@ body{
 	flex-direction: column;
 	height: 100vh;
 	border-top: 3px solid #ff9e55;
+	margin: 0;
+	padding: 0;
 }
 ul  {
 	list-style: none;
@@ -25,8 +29,8 @@ li:hover {
 /*******************HEADER**************/
 .header li{
 	flex-direction: row;
-	flex-grow: 1;
-	padding: 13px 14px;
+	margin: auto;
+	padding: 23px 60px;
 	flex-wrap: nowrap;
 	border-radius: 32% 12%;
 	text-align: center;
@@ -47,16 +51,16 @@ li:hover {
 	background-color: #fff;
 }
 .header-img{
-	padding-left:10px;
-	display: absolute;
+	margin-left:10px;
 	width: 15vh;
 	height: 15vh;
-	border-image: src="img/horse.png";
 }
 header li+li{
 	margin: 0 40px;
 }
-header li:visited{}
+header li:visited{
+	background-color: #11314f;
+}
 /*******************CONTENT********************/
 .content-flex{
     display: flex;
@@ -72,23 +76,25 @@ header li:visited{}
 	padding: 15px 0;
 	flex-grow: 1;
 }
-.left-content{
+.left-content,
+.top-content,
+.bottom-content{
 	flex-grow: 1;
 	box-shadow:inset 1px 1px 75px #ff9e55;
 	margin-right: 15px;
 	background-color: #fff;
 }
-
-.right-content{
-	flex-grow: 1;
-	box-shadow:inset 1px 1px 75px #ff9e55;
-	margin-left: 15px;
-	background-color: #fff;
-	
-}
 .content p {
 	text-align: center;
 	font-size: 25px;
+}
+.right-content{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.top-content{
+	margin-bottom: 15px;
 }
 /*****************FOOTER*******************************/
 .footer{
@@ -114,14 +120,15 @@ header li:visited{}
 }
 /***************BTN-FEEDBACK****************/
 .feedback {
-  position: absolute;
-  right: 110px;
-  top: 180px;
-  width: 150px;
-  height: 70px;
-  background: #ff9e55;
-  border-radius: 50px;
-  text-align: center;
+    position: absolute;
+    right: 50vw;
+    left: 50vw;
+    top: 55px;
+    width: 150px;
+    height: 70px;
+    background: #ff9e55;
+    border-radius: 50px;
+    text-align: center;
 }
 
 .feedback.active {
@@ -129,15 +136,15 @@ header li:visited{}
   height: 550px;
 	background-color: #ff9e55;
 }
-.feedback:hover{
+.open-close:hover{
 	cursor: pointer;
   box-shadow:inset 5px -5px 37px #7e9ee0;
-
+	border-radius: 50px;
 }
 .feedback .open-close {
   position: absolute;
   top: 0;
-  right: 0;
+	left: 0;
   width: 100%;
   height: 100%;
   text-align: right;
@@ -146,6 +153,9 @@ header li:visited{}
   width: 50px;
   height: 50px;
 	background-color: #ff9e55;
+	border-radius: 22%;
+  padding: 31px;
+	text-align: center;
 }
 .feedback .content-mini {
   display: block;
@@ -158,4 +168,7 @@ header li:visited{}
 }
 .feedback.active .content-feed {
   display: block;
+}
+.textArea{
+	 resize: none; 
 }
