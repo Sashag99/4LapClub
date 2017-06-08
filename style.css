@@ -19,10 +19,7 @@ ul  {
 	flex-grow:1;
 	padding: 0 100px;
 }
-li:hover {
-  border-top: 2px solid #ff9e55;
-	border-bottom: 2px solid #ff9e55;
-}
+
 .col{
 		margin: 0 10vh;
 }
@@ -40,6 +37,10 @@ li:hover {
 	list-style: none;	
 	color:#263747;
 	font-size: 50px;
+}
+.header li:hover {
+  border-top: 2px solid #ff9e55;
+	border-bottom: 2px solid #ff9e55;
 }
 .header li:before{
 	background-color: red;
@@ -83,6 +84,8 @@ header li:visited{
 	box-shadow:inset 1px 1px 75px #ff9e55;
 	margin-right: 15px;
 	background-color: #fff;
+	display: flex;
+  flex-direction: column;
 }
 .content p {
 	text-align: center;
@@ -95,6 +98,46 @@ header li:visited{
 }
 .top-content{
 	margin-bottom: 15px;
+}
+.left-content-text {
+	text-align: center;
+}
+.left-content-text ul{
+	display: block;
+	align-items: center;
+}
+.left-content-text li{
+	font-size: 20px;
+	line-height: 1.6em;
+	align-items: center;
+}
+/***********TABLE***************/
+.table{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	border: 3px solid #263747;
+	margin: 10px 10vh;
+}	
+.table-ul{
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+.table-ul ul{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.table-ul li{
+	flex-grow: 1;
+	border-bottom: 1px solid #11314f;
+	text-align: center;
+}
+.table-ul-right,
+.table-ul-left{
+	display: flex;
+	flex-grow: 1;
 }
 /*****************FOOTER*******************************/
 .footer{
@@ -117,6 +160,10 @@ header li:visited{
 .footer li a {
 	list-style: none;
 	text-decoration: none;
+}
+.footer li:hover {
+  border-top: 2px solid #ff9e55;
+	border-bottom: 2px solid #ff9e55;
 }
 /***************BTN-FEEDBACK****************/
 .feedback {
@@ -171,4 +218,10 @@ header li:visited{
 }
 .textArea{
 	 resize: none; 
+}
+.content-flex-feed p{
+	font-size: 17px;
+}
+.content-flex-feed{
+	margin-top: 25px;
 }
