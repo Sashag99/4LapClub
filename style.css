@@ -12,6 +12,7 @@ body{
 	border-top: 3px solid #ff9e55;
 	margin: 0;
 	padding: 0;
+	min-width: 1000px
 }
 ul  {
 	list-style: none;
@@ -24,13 +25,28 @@ ul  {
 		margin: 0 10vh;
 }
 /*******************HEADER**************/
+.header{
+	display: flex;
+	height: 150px;
+	align-items: center;
+	background-color: #fff;
+	flex: none;
+}
 .header li{
 	flex-direction: row;
-	margin: auto;
+	margin-left: 100px;
 	padding: 23px 60px;
 	flex-wrap: nowrap;
 	border-radius: 32% 12%;
 	text-align: center;
+	border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.header-ul{
+	margin: 0 200px;
+}
+.header-ul li {
+	margin: 0 100px;
 }
 .header li a {
 	text-decoration: none;
@@ -40,26 +56,17 @@ ul  {
 }
 .header li:hover {
   border-top: 2px solid #ff9e55;
-	border-bottom: 2px solid #ff9e55;
+  border-bottom: 2px solid #ff9e55;
 }
 .header li:before{
 	background-color: red;
-}
-.header{
-	display: flex;
-	height: 150px;
-	align-items: center;
-	background-color: #fff;
 }
 .header-img{
 	margin-left:10px;
 	width: 15vh;
 	height: 15vh;
 }
-header li+li{
-	margin: 0 40px;
-}
-header li:visited{
+.header li:visited{
 	background-color: #11314f;
 }
 /*******************CONTENT********************/
@@ -73,9 +80,10 @@ header li:visited{
 .content{
 	display: flex;
 	flex-direction: row;
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 	padding: 15px 0;
 	flex-grow: 1;
+	min-height: 585px;
 }
 .left-content,
 .top-content,
@@ -85,11 +93,12 @@ header li:visited{
 	margin-right: 15px;
 	background-color: #fff;
 	display: flex;
-  flex-direction: column;
+    flex-direction: column;
 }
 .content p {
 	text-align: center;
 	font-size: 25px;
+	cursor: default;
 }
 .right-content{
 	display: flex;
@@ -107,16 +116,24 @@ header li:visited{
 	align-items: center;
 }
 .left-content-text li{
-	font-size: 20px;
+	font-size: 17px;
 	line-height: 1.6em;
 	align-items: center;
+	font-weight: normal;
+	cursor: default;
+	 color: #4F7191;
 }
+.left-content-header p{
+	font-weight: bold;
+	cursor: default;
+	color: #263747;
+}
+
 /***********TABLE***************/
 .table{
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	border: 3px solid #263747;
 	margin: 10px 10vh;
 }	
 .table-ul{
@@ -128,11 +145,13 @@ header li:visited{
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	cursor: default;
 }
 .table-ul li{
 	flex-grow: 1;
 	border-bottom: 1px solid #11314f;
 	text-align: center;
+	cursor: default;
 }
 .table-ul-right,
 .table-ul-left{
@@ -142,9 +161,10 @@ header li:visited{
 /*****************FOOTER*******************************/
 .footer{
 	display: flex;
-  height: 100px;
+    height: 100px;
 	align-items: center;
 	background-color: #fff;
+	flex: none;
 }
 .footer ul {
  	padding: 0 auto;
@@ -156,6 +176,8 @@ header li:visited{
 	background-color: #fff;
 	border-radius: 32% 12%;
 	text-align: center;
+	border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 .footer li a {
 	list-style: none;
@@ -163,14 +185,13 @@ header li:visited{
 }
 .footer li:hover {
   border-top: 2px solid #ff9e55;
-	border-bottom: 2px solid #ff9e55;
+  border-bottom: 2px solid #ff9e55;
 }
 /***************BTN-FEEDBACK****************/
 .feedback {
     position: absolute;
-    right: 50vw;
-    left: 50vw;
-    top: 55px;
+    right: 150px;
+    top: 5vh;
     width: 150px;
     height: 70px;
     background: #ff9e55;
@@ -180,29 +201,34 @@ header li:visited{
 
 .feedback.active {
   width: 500px;
-  height: 550px;
-	background-color: #ff9e55;
+  height: 650px;
+  background-color: #ff9e55;
 }
 .open-close:hover{
-	cursor: pointer;
-  box-shadow:inset 5px -5px 37px #7e9ee0;
-	border-radius: 50px;
+  cursor: pointer;
+
+  border-radius: 50px;
 }
 .feedback .open-close {
   position: absolute;
   top: 0;
-	left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   text-align: right;
+  opacity: 0;
+}
+.feedback:not(.active):hover{
+   box-shadow:inset 5px -5px 37px #7e9ee0;
 }
 .feedback.active .open-close {
   width: 50px;
   height: 50px;
-	background-color: #ff9e55;
-	border-radius: 22%;
+  background-color: #ff9e55;
+  border-radius: 22%;
   padding: 31px;
-	text-align: center;
+  text-align: center;
+  opacity: 1;
 }
 .feedback .content-mini {
   display: block;
@@ -224,4 +250,11 @@ header li:visited{
 }
 .content-flex-feed{
 	margin-top: 25px;
+}
+.content-flex-feed h1{
+	margin: 10px 0;
+}
+.textArea{
+	resize:none;
+	width: 70%;
 }
