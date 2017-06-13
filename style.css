@@ -22,6 +22,9 @@ ul  {
 .col{
 		margin: 0 10vh;
 }
+a:visited{
+	color: #fff;
+}
 /*******************HEADER**************/
 .header{
 	display: flex;
@@ -142,8 +145,7 @@ ul  {
 }
 .content-img-1,
 .content-img-2,
-.content-img-3,
-.content-img-4{
+.content-img-3{
 	flex-grow: 1;
 	display: flex;
 	margin: 1.5% 1.5%;
@@ -203,7 +205,25 @@ ul  {
 	flex-direction: column;
 	flex-grow: 1;
 }
-
+/***************************RIGHT-CONTENT-IMG*******************************/
+.right-content-img{
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	margin: 0 15px 10px;
+}
+.content-img-4{
+	flex-grow: 1;
+	display: flex;
+	margin: 1.5% 1.5%;
+	box-shadow: 6px -4px 13px #7e9ee0;
+	border-radius: 20px;
+}
+.right-content-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
 /*****************FOOTER*******************************/
 .footer{
 	display: flex;
@@ -290,10 +310,10 @@ ul  {
   display: block;
 }
 .content-flex-feed p{
-	font-size: 17px;
+	font-size: 20px;
 }
 .content-flex-feed{
-	margin-top: 25px;
+	margin-top: 50px;
 }
 .content-flex-feed h1{
 	margin: 10px 0;
@@ -362,5 +382,57 @@ ul  {
   	display: none;
 }
 .Prices.active .content-feed {
+  	display: block;
+}
+/**************************PRICES-2***************************/
+.Prices-2 {    
+	position: absolute;
+    width: 150px;
+    height: 70px;
+    background: #55EDFF;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.Prices-2.active {
+    width: 400px;
+    height: 350px;
+  	background-color: #55EDFF;
+}
+.open-close:hover{
+	cursor: pointer;
+	border-radius: 50px;
+}
+.Prices-2 .open-close {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	opacity: 0;
+}
+.Prices-2:not(.active):hover{
+   box-shadow:inset 5px -5px 37px #ff9e55;
+}
+.Prices-2.active .open-close {
+	width: 50px;
+	height: 50px;
+	background-color: #55EDFF;
+	border-radius: 22%;
+	text-align: center;
+	opacity: 1;
+	padding: 10px 10px;
+}
+.Prices-2 .content-mini {
+  	display: block;
+}
+.Prices-2.active .content-mini {
+  	display: none;
+}
+.Prices-2 .content-feed {
+  	display: none;
+}
+.Prices-2.active .content-feed {
   	display: block;
 }
