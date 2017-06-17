@@ -107,7 +107,9 @@ a:visited{
 	flex-direction: column;
 	flex-grow: 1;
 }
-
+.content p {
+   	font-weight: bold;
+   }
 /*************************LEFT-CONTENT********************/
 .left-content{
 	margin-right: 15px;
@@ -304,6 +306,7 @@ a:visited{
 }
 .feedback .content-mini {
   display: block;
+  font-weight: bold;
 }
 .feedback.active .content-mini {
   display: none;
@@ -379,6 +382,7 @@ a:visited{
 }
 .Prices .content-mini {
   	display: block;
+	font-weight: bold;
 }
 .Prices.active .content-mini {
   	display: none;
