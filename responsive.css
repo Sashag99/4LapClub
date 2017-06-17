@@ -65,4 +65,23 @@
    .footer ul li {
    	text-align: center;
    }
+   .content-about{
+       background: none;
+   }
+    .first,
+    .second{
+    margin: 0 0 15px 0;
+    }
+    .first-img,
+    .second-img{
+        width: 93%;
+    }
+    .first-ul-top,
+    .second-ul-top{
+        margin: 250px 0 0 0;
+    }
+    .first-ul-bottom li,
+    .second-ul-bottom li{
+        text-align: center;
+    }
 }
