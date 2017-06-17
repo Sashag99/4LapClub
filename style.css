@@ -68,8 +68,8 @@ a:visited{
     width: 150px;
     height: 150px;
 }
-.header li:visited{
-	background-color: #11314f;
+.active{
+	background-color: rgba(181, 194, 193, 0.3);
 }
 /*******************CONTENT********************/
 .content-flex{
@@ -254,6 +254,11 @@ a:visited{
   border-top: 2px solid #ff9e55;
   border-bottom: 2px solid #ff9e55;
 }
+.footer img{
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+}
 /***************BTN-FEEDBACK****************/
 .feedback {
     position: absolute;
@@ -321,7 +326,7 @@ a:visited{
 .textArea{
 	resize:none;
 	width: 70%;
-	border-radius: 14px;
+	border-radius: 20px;
 }
 .submit{
 	margin: 20px;
@@ -435,4 +440,65 @@ a:visited{
 }
 .Prices-2.active .content-feed {
   	display: block;
+}
+/*****************************************************
+***********************PAGES_ABOUT*************************
+*********************************************************/
+.first,
+.second{
+	display: flex;
+    flex-grow: 1;
+    box-shadow: inset 1px 1px 75px #ff9e55;
+    background-color: #fff;
+    flex-direction: row;
+    border-radius: 20px;
+	margin: 0 15px;
+}
+.content-about {
+	display: flex;
+	flex-direction: row;
+    background-color: #f2f2f2;
+	padding: 15px 0;
+	flex-grow: 1;
+	min-height: 585px;
+}
+.content-about li {
+	text-align: center;
+} 
+.first-img,
+.second-img{
+	height: 250px;
+	width: 250px;
+	margin: 15px 15px;
+	position: absolute;
+    border-radius: 20px;
+    box-shadow: 6px -4px 13px #7e9ee0;
+}
+.first-img img,
+.second-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+.first ul,
+.second ul{
+	flex-direction: column;
+}
+.first-ul-top,
+.second-ul-top{
+	margin: 15px 0 0 260px;
+}
+.first-ul-bottom,
+.second-ul-bottom{
+
+}
+.first-ul-bottom li,
+.second-ul-bottom li{
+		text-align: left;
+}
+.first-ul,
+.second-ul{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
