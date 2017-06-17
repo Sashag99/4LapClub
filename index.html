@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>4LapClub</title>
     <link rel="stylesheet" media="all" href=" style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">   
+    <link rel="stylesheet" href="responsive.css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <div class="header">
@@ -15,17 +17,17 @@
     </div>
     <div class="header-ul">
         <ul>
-            <li><a href="index.html">Услуги</a></li>
-            <li><a href="pages02.html">О нас</a></li>
+            <li  class="active"><a href="index.html">Услуги</a></li>
+            <li><a href="about.html">О нас</a></li>
         </ul>
     </div>  
     <div class="feedback">
         <div class="open-close">x</div>
-        <div class="content-mini"><br>Feedback</div>
+        <div class="content-mini"><br>Есть вопросы? Задавайте!</div>
 
         <div class="content-feed">
                 <form action="" class="content-flex-feed">
-                 <p> <h1>Вaши</h1> <br>Пожелания нам <br>Советы нам<br>Предожения нам <br>Пишите в поле ниже </p>
+                <p>Пожелания<br>Советы <br>Предожения <br>Нам<br>Пишите в поле ниже </p>
                     <textarea placeholder="write text" rows="15" class="textArea" >
                     </textarea>
                     <p>
@@ -66,7 +68,7 @@
                     <li>Нужда зовёт и новые запахи за ночь. </li>
                     <li>Позвоните мне. Я решу Вам этот вопрос.</li>
                     <li>Вы успеете на работу,отдохнете в жару после</li>
-                    <li>тяжёлой неделии вообще завтра Ваш любимец будет </li>
+                    <li>тяжёлой недели и вообще завтра Ваш любимец будет </li>
                     <li>искать меня взглядом снова! </li>
                 </ul>
 
@@ -74,21 +76,18 @@
     </div>
     <div class="left-content-img">
         <div class="content-img-1"> 
-            <img src="img\собка зима 02.jpg" alt="собака зима"> 
+            <img src="img\собка зима 02.jpg"  alt="собака зима"> 
         </div>
-        <div class="content-img-2"> 
-            <img src="img\собака наповодку.jpg" alt="собака наповодку"> 
+        <div class="content-img-2 hidden-phone"> 
+            <img src="img\собака наповодку.jpg" alt="собака наповодку" class="hidden-phone"> 
         </div>
-        <div class="content-img-3"> 
-            <img src="img\собака трава.jpg" alt="собака трава"> 
-        </div>
-        <div class="content-img-4">
-             <img src="img\Собака улица осень.jpg" alt="cобака улица осень"> 
+        <div class="content-img-3 hidden-phone"> 
+            <img src="img\собака трава.jpg" alt="собака трава" class="hidden-phone"> 
         </div>
     </div>
         <div class="Prices">
         <div class="open-close">x</div>
-        <div class="content-mini"><br>Услуги</div>
+        <div class="content-mini"><br>Хочу!</div>
         <div class="content-feed">
             <div class="table">
                 <div class="table-ul">
@@ -109,6 +108,7 @@
                         </ul>
                     </div>
                 </div>
+                <p> Звоните по номеру <br>0936990493 </p>
             </div>
         </div>
     </div>
@@ -116,32 +116,50 @@
 <div class="right-content">
     <div class="top-content"> 
         <p>
-             Услуга Зоо Такси
+              Зоо Такси
         </p>
         <ul>
-            <li>Иногда возникают ситуации, когда Вам необходимо доставить </li>
-            <li>Вашего питомца либо к ветеринару на прививку, либо на стрижку</li>
-            <li>в груминг салон или просто на дачу. Заказать обычное такси,</li>
-            <li>для поездки с животным, не всегда удается. Даже если у вас</li>
-            <li>маленький котенок или птичка – это может служитьпричиной для </li>
-            <li>отказа. А что говорить, если вы являетесь счастливым хозяином алабая.</li>
-            <li>В такие моменты будем рады предложить Вам услуги ЗООТАКСИ по </li>
-            <li>транспортировке животных по городу Киеву и области. Подготовленные </li>
-            <li>к перевозке животных машины ЗООТАКСИ доставят Вас в пункт назначения без хлопот.</li>
+            <li>Иногда возникают ситуации, когда Вам</li>
+            <li>необходимо доставить  Вашего питомца </li>
+            <li>либо к ветеринару на прививку,либо</li>
+            <li>на стрижку в салон или просто на дачу.</li>
+            <li>Если у Вас нет времени - не проблема.</li>
+            <li>Позвоните нам и мы поможем Вам в этом</li>
         </ul>
+        <div class="right-content-img">
+            <div class="content-img-4"> 
+                <img src="img\собака маш\images (1).jpg" alt=""> 
+            </div>
+        </div>
     </div>
-    <div class="bottom-content">wertyui</div>
 </div>
 </div>
 
 <footer class="footer">
 <ul>
-    <li><a href="https://vk.com/galtsov_sasha">vk.com/galtsov_sasha</a></li>
-    <li><a href="https://www.instagram.com/galtsov_sasha/">instagram.com/galtsov_sasha</a></li>
-    <li><a href="https://www.facebook.com/GaltsovSasha">facebook.com/GaltsovSasha</a></li> 
+    <li>
+        <img src="img\icon\vk.png" alt="vkontakte">
+        <a href="https://vk.com/galtsov_sasha">vk.com/galtsov_sasha</a>
+    </li>
+    <li>
+        <img src="img\icon\instagram.png" alt="instagram">
+        <a href="https://www.instagram.com/galtsov_sasha/">instagram.com/galtsov_sasha</a>
+    </li>
+    <li>
+        <img src="img\icon\facebook.png" alt="facebook">
+        <a href="https://www.facebook.com/GaltsovSasha">facebook.com/GaltsovSasha</a>
+    </li> 
 </ul>
 </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-101185109-1', 'auto');
+         ga('send', 'pageview');
+</script>
 </body>
 </html>
